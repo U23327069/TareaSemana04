@@ -4,11 +4,10 @@ public class Pregunta3 {
         Scanner Scanner = new Scanner(System.in);
         // Solicitar al usuario que ingrese un número entre 1 y 6
         System.out.print("Ingrese un número entero entre 1 y 6: ");
-        int numero = Scanner.nextInt();
-        
-        // Verificar si el número está en el rango permitido
+        int numero = Scanner.nextInt();        
+        // Verificamos el número permitido
         if (numero >= 1 && numero <= 6) {
-            // Convertir el número a inglés
+            // El número a inglés
             String ingles;
             switch (numero) {
                 case 1:
@@ -30,10 +29,10 @@ public class Pregunta3 {
                     ingles = "six";
                     break;
                 default:
-                    ingles = "Desconocido"; // Esta parte no debería ocurrir
+                    ingles = "Desconocido";
                     break;
             }
-            // Mostrar la palabra correspondiente en inglés
+            // Mostrar la palabra en inglés
             System.out.println("El número ingresado en inglés es: " + ingles);
         } else {
             // Si el número no está en el rango de 1 a 6
